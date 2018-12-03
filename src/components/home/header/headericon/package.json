@@ -1,0 +1,7 @@
+{
+    "name": "HeaderIcon",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./headerIcon.jsx"
+}
+  
