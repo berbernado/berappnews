@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {Row, Col, Container } from 'reactstrap';
 
-import logo from '../../../static/images/ecc.png';
-import logo2 from '../../../static/images/logo-kanan.png';
+import logo from '../../../assets/images/ecc.png';
+import logo2 from '../../../assets/images/logo-kanan.png';
 
 const logoKanan = {
     maxWidth: '150px',

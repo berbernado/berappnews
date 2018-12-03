@@ -1,4 +1,5 @@
 import React from "react";
+import {Row, Col, Container } from 'reactstrap';
 
 import HeaderLinks from "../headerlink/headerLink";
 import HeaderIcon from "../headericon/headerIcon";
@@ -7,17 +8,16 @@ class HeaderAtas extends React.Component {
     render() {
         return (
             <div id="wrapper" className="header-top section">
-                <div className="container">
-                    <div className="row">
-                        <div className="header-top-links col-md-9 col-6">
+                <Container>
+                    <Row>
+                        <Col xs="6" md="9" className="header-top-links">
                             <HeaderLinks />
-                        </div>
-                        <div className="header-top-social col-md-3 col-6">
+                        </Col>
+                        <Col xs="6" md="3" className="header-top-social">
                             <HeaderIcon />
-                        </div>
-                        
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }

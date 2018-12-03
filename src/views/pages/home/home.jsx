@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import HeaderAtas from '../../../components/home/header/headerAtas';
+import HeaderAtas from '../../../components/home/header/headeratas';
 import Banner from '../../../components/home/banner/banner';
 //import Menu from '../../components/home/menu/menu';
 //import BreakingNews from '../../components/home/beritaheader/breaking-news';

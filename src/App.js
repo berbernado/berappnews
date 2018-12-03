@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import Loadable from 'react-loadable';
+
 import './App.scss';
+import { library } from '@fortawesome/fontawesome-svg-core'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab)
+
+const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
+// Pages
+const Home = Loadable({
+  loader: () => import('./views/pages/home/home'),
+  loading
+});
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <HashRouter>
+          <Switch>
+            <Route exact path="/home" name="Home" component={Home} />
+            <Route path="/" name="Home" component={Home} />
+          </Switch>
+      </HashRouter>
     );
   }
 }
