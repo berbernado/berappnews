@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import {Row, Col, Container } from 'reactstrap';
 //import { Link } from "react-router-dom";
 import {NewsTicker} from "react-announcement-ticker";
 
@@ -22,9 +22,9 @@ class BreakingNews extends Component {
     render() {
         return (
             <div className="breaking-news-section section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                <Container>
+                    <Row>
+                        <Col xs="12">
                             <div className="breaking-news-wrapper">
                                 <h5 className="breaking-news-title float-left">Breaking News</h5>
                                 <NewsTicker style={{ color: "#ffffff !important"}}
@@ -32,9 +32,10 @@ class BreakingNews extends Component {
                                 />
                                
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
+                
             </div>
         );
     }

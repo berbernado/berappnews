@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import {Row, Col, Container } from 'reactstrap';
 
-
-import MainMenu from "./mainmenu";
-import MenuSearch from "./menusearch";
-import MenuMobile from "./menumobile";
-import logo from '../../../static/images/logo-white.png';
+import MainMenu from "../components/mainmenu/mainmenu";
+import MenuSearch from "../components/menusearch/menusearch";
+import MenuMobile from "../components/menumobile/menumobile";
+import logo from '../../../../assets/images/logo-white.png';
 
 
 class Menu extends Component {
     render() {
         return (
             <div className="menu-section section bg-dark" >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12" >
+                <Container>
+                    <Row>
+                        <Col>
                             <div className="menu-section-wrap">
                                 <MainMenu />
                                     
@@ -24,10 +24,11 @@ class Menu extends Component {
                                 <MenuSearch />
                                 <MenuMobile />
                                 <div className="mobile-menu"></div>
-                            </div>                                  
-                        </div>
-                    </div>
-                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+                
             </div>
         );
     }

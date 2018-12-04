@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-
+import {Row, Col, Container } from 'reactstrap';
 import NewsSide from "../newsside/newsside";
 
 const Judul = styled.div`
@@ -35,9 +35,9 @@ class NewNews extends Component {
     render() {
         return (
             <div className="post-section section ">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8 col-12 mb-50">
+                <Container>
+                    <Row>
+                        <Col xs="12" lg="8" className="mb-50">
                             <div className="post-block-wrapper">
                                 <div className="head education-head">
                                     <h4 className="title">Featured News</h4>
@@ -67,11 +67,11 @@ class NewNews extends Component {
                                 </div>
                                 
                             </div>
-                        </div>
-
+                        </Col>
                         <NewsSide />
-                    </div>
-                </div>
+                    </Row>
+                </Container>
+                
             </div>
            
         );

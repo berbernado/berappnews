@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import {Row, Col, Container } from 'reactstrap';
 
 
 class BeritaTop extends Component {
     render() {
         return (
             <div className="hero-section section mt-30 mb-30">
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <div className="row row-1">
-                                <div className="order-lg-1 col-lg-6 col-12">
+                <Container>
+                    <Row>
+                        <Col>
+                            <Row className="row-1">
+                                <Col className="order-lg-1" lg="6" xs="12">
                                     <div className="post-carousel-1">
                                         <BeritaSlide 
                                             imgberita="https://akcdn.detik.net.id/community/media/visual/2018/11/18/dcbcb549-451b-4860-99d3-2fbccf233e71_169.jpeg?w=700&q=80"
@@ -21,9 +21,9 @@ class BeritaTop extends Component {
                                             waktuberita="10 November 2018" 
                                         />
                                     </div>
-                                </div>
-                                <div className="order-lg-2 col-lg-3 col-12">
-                                    <div className="row row-1">
+                                </Col>
+                                <Col className="order-lg-2" lg="3" xs="12">
+                                    <Row className="row-1">
                                         <BeritaKotak 
                                             imgberita="https://akcdn.detik.net.id/community/media/visual/2016/02/10/efae4a44-874f-4f9b-87f9-b80c6bac5d98_169.jpg?w=700&q=90"
                                             labelberita="category gadgets"
@@ -38,10 +38,10 @@ class BeritaTop extends Component {
                                             berita="Rekomendasi Tempat Wisata di Bali: Pura Besakih"
                                             waktuberita="10 November 2018" 
                                         />
-                                    </div>
-                                </div>
-                                <div className="order-lg-3 col-lg-3 col-12">
-                                    <div className="row row-1">
+                                    </Row>
+                                </Col>
+                                <Col className="order-lg-3" lg="3" xs="12">
+                                    <Row className="row-1">
                                         <BeritaKotak 
                                             imgberita="https://akcdn.detik.net.id/community/media/visual/2018/07/28/0ec88bbf-ea2d-4254-986a-c29673dc3a29_169.jpeg?w=700&q=80"
                                             labelberita="category education"
@@ -56,12 +56,13 @@ class BeritaTop extends Component {
                                             berita="Ngatain Gendut Bisa Dipidana, Apa Sih Body Shaming Itu?"
                                             waktuberita="10 November 2018" 
                                         />
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+                
             </div>
            
         );

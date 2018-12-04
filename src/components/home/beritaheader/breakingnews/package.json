@@ -1,0 +1,7 @@
+{
+    "name": "BreakingNews",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./breaking-news.jsx"
+}
+  
